@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        MyCarAdapter cars = new MyCarAdapter(this);
+        MyCarAdapter cars = new MyCarAdapter(this, MainActivity.this);
 
         ListView lv_cars = (ListView) findViewById(R.id.myCarList);
 
